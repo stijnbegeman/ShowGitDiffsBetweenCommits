@@ -2,3 +2,7 @@ ShowGitDiffBetweenCommits/ShowGitDiffBetweenCommits/obj/
 ShowGitDiffBetweenCommits/.vs/ShowGitDiffBetweenCommits/v15/.suo
 ShowGitDiffBetweenCommits/packages/
 ShowGitDiffBetweenCommits/ShowGitDiffBetweenCommits/bin/
+ShowGitDiffBetweenCommits/ShowGitDiff.Git/obj
+ShowGitDiffBetweenCommits/ShowGitDiff.Sdk/obj/
+ShowGitDiffBetweenCommits/ShowGitDiff.ToolWindow/obj/
+ShowGitDiffBetweenCommits/ShowGitDiff.ToolWindow/obj/
