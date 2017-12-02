@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowGitDiff.Sdk", "ShowGitD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowGitDiff.Git", "ShowGitDiff.Git\ShowGitDiff.Git.csproj", "{15910079-9B28-4A21-ADD3-C7F419A1B497}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowGitDiff.Modules", "ShowGitDiff.Modules\ShowGitDiff.Modules.csproj", "{2A2B4EE8-FA56-4692-BB36-B756375BBD51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{15910079-9B28-4A21-ADD3-C7F419A1B497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15910079-9B28-4A21-ADD3-C7F419A1B497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15910079-9B28-4A21-ADD3-C7F419A1B497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2B4EE8-FA56-4692-BB36-B756375BBD51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2B4EE8-FA56-4692-BB36-B756375BBD51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2B4EE8-FA56-4692-BB36-B756375BBD51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2B4EE8-FA56-4692-BB36-B756375BBD51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

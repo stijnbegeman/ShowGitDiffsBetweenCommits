@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3D56B02A-5B39-4C10-99E6-E09B75204714}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>ShowGitDiff.ToolWindow</RootNamespace>
     <AssemblyName>ShowGitDiff.ToolWindow</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -50,16 +53,26 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="GitDiff\FileChanges\FileChangesControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GitDiff\GitDiffControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="GitDiff\FileChanges\FileChangesControl.xaml.cs">
+      <DependentUpon>FileChangesControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GitDiff\FileChanges\FileChangesControlViewModel.cs" />
+    <Compile Include="GitDiff\FileChanges\IFileChangesControlViewModel.cs" />
     <Compile Include="GitDiff\GitDiffControl.xaml.cs">
       <DependentUpon>GitDiffControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="GitDiff\GitDiffControlViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GitDiff\IGitDiffControlViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

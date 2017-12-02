@@ -1,18 +1,12 @@
-﻿<UserControl x:Class="ShowGitDiff.ToolWindow.GitDiff.GitDiffControl"
+﻿<UserControl x:Class="ShowGitDiff.ToolWindow.GitDiff.FileChanges.FileChangesControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ShowGitDiff.ToolWindow.GitDiff"
+             xmlns:local="clr-namespace:ShowGitDiff.ToolWindow.GitDiff.FileChanges"
              mc:Ignorable="d" 
-             d:DataContext="{d:DesignInstance local:GitDiffControlViewModel, IsDesignTimeCreatable=True}"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.1*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <ListView Grid.Row="1"/>
-
+            
     </Grid>
 </UserControl>
