@@ -8,5 +8,13 @@ namespace ShowGitDiff.ToolWindow.GitDiff.FileChanges
 {
     public class FileChangesControlViewModel : IFileChangesControlViewModel
     {
+        #region Public methods
+
+        public async Task UpdateFileChanges()
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
     }
 }

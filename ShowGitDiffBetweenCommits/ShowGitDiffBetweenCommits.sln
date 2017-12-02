@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowGitDiff.Git", "ShowGitD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowGitDiff.Modules", "ShowGitDiff.Modules\ShowGitDiff.Modules.csproj", "{2A2B4EE8-FA56-4692-BB36-B756375BBD51}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7993FCC6-3993-497E-B4EA-8773986A0C50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

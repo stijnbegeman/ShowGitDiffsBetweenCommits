@@ -20,8 +20,10 @@ namespace ShowGitDiff.ToolWindow.GitDiff
     /// </summary>
     public partial class GitDiffControl : UserControl
     {
-        public GitDiffControl()
+        public GitDiffControl(IGitDiffControlViewModel viewModel)
         {
+            DataContext = viewModel;
+
             InitializeComponent();
         }
     }

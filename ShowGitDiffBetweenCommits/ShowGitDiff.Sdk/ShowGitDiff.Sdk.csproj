@@ -53,6 +53,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Git\Diffs\GitDiff.cs" />
     <Compile Include="Git\IGitRepository.cs" />
     <Compile Include="Git\IGitRepositoryFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Features.ResolveAnything;
 using ShowGitDiff.ToolWindow.GitDiff;
 using ShowGitDiff.ToolWindow.GitDiff.FileChanges;
 using System;
@@ -24,11 +25,11 @@ namespace ShowGitDiff.Modules
             return container.Resolve<IGitDiffControlViewModel>();
         }
 
-
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<GitDiffControlViewModel>().As<IGitDiffControlViewModel>().SingleInstance();
             builder.RegisterType<FileChangesControlViewModel>().As<IFileChangesControlViewModel>().SingleInstance();
+            builder.RegisterSource(new AnyConcreteTypeNotAlreadyRegisteredSource());
         }
     }
 }

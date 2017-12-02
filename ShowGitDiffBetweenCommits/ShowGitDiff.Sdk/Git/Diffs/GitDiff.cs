@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShowGitDiff.ToolWindow.GitDiff.FileChanges
+namespace ShowGitDiff.Sdk.Git.Diffs
 {
-    public interface IFileChangesControlViewModel
+    public class GitDiff
     {
-        Task UpdateFileChanges();
     }
 }
